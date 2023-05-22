@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Héctor Miguel Reyes Díaz</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre-mi">Sobre Mí</a></li>
+          <li><a href="#trabajos">Trabajos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>Soy joven de 26 años, me encanta la inovación, alguna de mis actividades favoritas es, salir a hacer ciclismo, no soy bueno, pero espero seguir mejorando.</p>
+      </section>
+
+      <section id="trabajos">
+        <h2>Trabajos</h2>
+        <div class="trabajo">
+          <img src="repartidor.png" alt="Repartidor">
+          <h3>Trabajo de repartidor</h3>
+          <p>Estuve llevando los pedidos de la gente, que iba a comprar su biberes y yo era el que se los tenia que llevar a la puerta de su casa.</p>
+        </div>
+        <div class="trabajo">
+          <img src="reclutador.jpg" alt="reclutador">
+          <h3>trabajo de reclutador</h3>
+          <p>Mi trabajo consistia, recibir hojas de vida y citar a las personas a  ir a una entrevista con el objetivo de capacitarlas y que trabajaran para nosotros.</p>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="submit-form.php" method="POST">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
